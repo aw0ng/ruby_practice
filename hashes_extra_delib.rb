@@ -141,7 +141,23 @@
 # Write a function that accepts an array like this and returns a hash table showing how many votes each candidate received, like this:
 # {"Gutierrez": 3, "Johnson": 5}
  
+# votes = ["Gutierrez", "Johnson", "Johnson", "Johnson", "Gutierrez", "Johnson", "Gutierrez", "Johnson"]
 
+# def vote_count(array)
+#   hash = {}
+#   i = 0
+#   while i < array.length
+#     candidate = array[i]
+#     if hash[candidate] == nil
+#       hash[candidate] = 0
+#     end
+#     hash[candidate] += 1
+#     i += 1
+#   end
+#   return hash
+# end
+
+# p vote_count(votes)
 
 # #9
 # Write a function that accepts a string and returns a hash table displaying the frequency of each character.
