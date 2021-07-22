@@ -166,6 +166,25 @@
 # Input: "abcdbcabcdcbaz"
 # Output: {"a": 3, "b": 4, "c", 4, "d": 2, "z": 1}
  
+string = "abcdbcabcdcbaz"
+
+def character_count(string)
+  string_array = string.split("")
+  string_hash = {}
+  i = 0
+  while i < string_array.length
+    character = string_array[i]
+    if string_hash[character] == nil
+      string_hash[character] = 0
+    end
+    string_hash[character] += 1
+    i += 1
+  end
+  return string_hash
+end
+
+p character_count(string)
+
 # #10
 # Write a function that accepts a hash table of political candidates and their number of votes and return the candidate with the most votes.
 # Example: 
